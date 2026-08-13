@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobStamp – Privacy Policy</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#121212;color:#f5f5f5;line-height:1.72}
+header{border-bottom:1px solid #2c2c2c;background:#181818;position:sticky;top:0;z-index:10}
+nav{max-width:960px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{font-size:1.35rem;font-weight:700}.brand span{color:#ff9800}
+.navlinks{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+a{color:#ffab40;text-decoration:none}a:hover{text-decoration:underline}
+main{max-width:960px;margin:auto;padding:64px 24px 100px}
+.eyebrow{color:#ff9800;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;font-size:.8rem;margin-bottom:10px}
+h1{font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.08;margin-bottom:12px}
+.lead{color:#bdbdbd;font-size:1.08rem;margin-bottom:34px}
+section{scroll-margin-top:90px;margin-top:38px}
+h2{font-size:1.42rem;margin-bottom:14px}h3{font-size:1.08rem;margin:18px 0 7px}
+p{margin-bottom:14px}ul,ol{margin:10px 0 18px 24px}li{margin-bottom:7px}
+.box{background:#1d1d1d;border:1px solid #303030;border-radius:14px;padding:20px;margin:16px 0}
+.important{border-left:4px solid #ff9800}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+footer{border-top:1px solid #2c2c2c;color:#8d8d8d;padding:30px 24px}
+.footer-inner{max-width:960px;margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+@media(max-width:700px){main{padding-top:44px}nav{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><nav>
+<div class="brand">PaBa<span>Apps</span></div>
+<div class="navlinks"><a href="/">Home</a><a href="/jobstamp/datenschutz.html">Deutsch</a></div>
+</nav></header>
+<main>
+<div class="eyebrow">JobStamp</div>
+<h1>Privacy Policy</h1>
+<p class="lead">Privacy Policy for the JobStamp mobile application. Last updated: August 2026.</p>
+
+<section><h2>1. Controller</h2>
+<div class="box"><p><strong>Patrick Baust</strong><br>PaBaApps<br>Christophorusweg 5<br>59889 Eslohe<br>Germany<br>Email: <a href="mailto:pabaapps@web.de">pabaapps@web.de</a></p></div></section>
+
+<section><h2>2. Scope</h2>
+<p>This Privacy Policy explains how personal data is processed when using the JobStamp mobile application and its related online services, including registration, authentication, cloud synchronisation, company collaboration, subscriptions, support and other app functions.</p></section>
+
+<section><h2>3. Legal bases and principles</h2>
+<p>Personal data is processed in accordance with the GDPR and applicable data-protection law. Depending on the processing activity, the legal basis may include consent (Art. 6(1)(a) GDPR), contract performance (Art. 6(1)(b)), legal obligations (Art. 6(1)(c)) or legitimate interests such as security and stability (Art. 6(1)(f)).</p>
+<p>We follow the principles of data minimisation, purpose limitation, storage limitation, integrity and confidentiality.</p></section>
+
+<section><h2>4. Registration and authentication</h2>
+<p>Cloud functions require a user account. Data may include name, email address, authentication information, a unique user identifier and registration or login timestamps. Users may sign in with email and password and, where available, with Google Sign-In. Google passwords are never provided to PaBaApps.</p></section>
+
+<section><h2>5. Local storage and cloud synchronisation</h2>
+<p>JobStamp follows an offline-first approach. Depending on use, settings, company data, customers, jobs, categories, work-time entries, material data, team members and synchronisation information may be stored locally on the device.</p>
+<p>Cloud synchronisation can transmit company data, customers, contacts, jobs, work-time entries, materials, categories, team members, settings and required synchronisation metadata over encrypted connections. Access is restricted to authorised users of the relevant company.</p></section>
+
+<section><h2>6. Company, team, customer and job data</h2>
+<p>JobStamp can process company names, addresses, phone numbers, email addresses, logos, settings and team information. Team member data may include name, role, trade/profession and optionally contact details. Customer and job records may include company/customer names, contacts, addresses, phone numbers, email addresses, notes, location information, job titles, categories, status, planned dates, assigned employees, materials and recorded work times.</p></section>
+
+<section><h2>7. Time tracking, calendar and materials</h2>
+<p>JobStamp can record work time, travel time, setup time and breaks, including start, end, duration, employee, customer, job and notes. Calendar views display existing company and planning data. Material records may include names, categories, internal, wholesaler and manufacturer article numbers, units, package quantities, usage and, where entered by the company, price information.</p></section>
+
+<section><h2>8. Photos and camera</h2>
+<p>Users can take or select photos for documentation. Camera or photo access is used only after permission is granted through the operating system. Photos are not automatically published or disclosed to unrelated third parties.</p></section>
+
+<section><h2>9. Location and geofencing</h2>
+<p>With the user's permission, precise location data can be used for optional functions such as reminders when arriving at or leaving a customer location and support for time-tracking workflows. JobStamp is not intended to create permanent movement profiles. Location permissions can be revoked in the device settings.</p></section>
+
+<section><h2>10. Notifications</h2>
+<p>JobStamp uses local notifications for time-tracking reminders, location reminders, running timers, synchronisation information and system messages. Notification permissions can be disabled in the operating-system settings.</p></section>
+
+<section><h2>11. Audit log</h2>
+<p>For traceability, certain changes can be logged. Depending on the action, the log may contain the time, action type, affected record, old and new values, a reason for the change and the user who performed it. This can include changes and cancellations relating to customers, jobs, materials, company settings, team members, work-time entries and workday timers.</p></section>
+
+<section><h2>12. Google Play Billing</h2>
+<p>Optional subscriptions are purchased through Google Play. PaBaApps does not receive credit-card or bank-account details. For licence management and server-side purchase verification, JobStamp may process product identifiers, purchase status, expiry information, technical purchase references and licence status.</p></section>
+
+<section><h2>13. Service providers</h2>
+<h3>Supabase</h3><p>Supabase is used for authentication, database services, cloud synchronisation, company data storage and access control. More information: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy</a>.</p>
+<h3>Google</h3><p>Google provides Google Play distribution, billing and, where selected, Google Sign-In. Google processes data under its own privacy terms. More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p></section>
+
+<section><h2>14. Security</h2>
+<p>We use appropriate technical and organisational safeguards, including encrypted transmission, secure authentication, role-based access controls, server-side access restrictions and logical separation of company data.</p></section>
+
+<section><h2>15. Storage period</h2>
+<p>Personal data is stored only for as long as required for the relevant processing purpose or for applicable legal retention obligations. When a purpose no longer applies, data is deleted or anonymised unless lawful retention requirements apply.</p></section>
+
+<section><h2>16. Account and data deletion</h2>
+<p>Users can delete their JobStamp account directly in the app. Account deletion removes the sign-in account, personal account links, company membership links and personal profile data, or detaches/anonymises information where business documentation must lawfully remain.</p>
+<div class="box important"><p><strong>Company owners:</strong> If a user is the last owner of a company, ownership must first be transferred to another linked account or the company and its associated company data must be permanently deleted.</p></div>
+<p>Deletion can also be requested without access to the app by emailing <a href="mailto:pabaapps@web.de">pabaapps@web.de</a>. Full instructions are available at <a href="/jobstamp/delete-account.html">Delete account &amp; data</a>.</p></section>
+
+<section><h2>17. Your rights</h2>
+<p>Subject to the conditions of the GDPR, data subjects may have rights of access, rectification, erasure, restriction of processing, data portability, objection and withdrawal of consent. Requests can be sent to <a href="mailto:pabaapps@web.de">pabaapps@web.de</a>.</p></section>
+
+<section><h2>18. Supervisory authority</h2>
+<p>Data subjects have the right to lodge a complaint with a competent data-protection supervisory authority if they believe their personal data is being processed unlawfully.</p></section>
+
+<section><h2>19. Changes to this Privacy Policy</h2>
+<p>This Privacy Policy may be updated when technical functions, legal requirements or processing activities change. The current version published here applies.</p></section>
+
+<section><h2>20. Version</h2><p><strong>Last updated: August 2026</strong></p></section>
+
+</main>
+<footer><div class="footer-inner">
+<div>© 2026 PaBaApps · JobStamp</div>
+<div><a href="/jobstamp/privacy.html">Privacy</a> · <a href="/jobstamp/imprint.html">Legal Notice</a> · <a href="/jobstamp/delete-account.html">Delete account</a></div>
+</div></footer>
+</body></html>
