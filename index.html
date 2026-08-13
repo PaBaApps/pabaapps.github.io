@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PaBaApps – Digitale Werkzeuge für den Arbeitsalltag.">
+  <meta id="metaDescription" name="description" content="PaBaApps – Digitale Werkzeuge für den Arbeitsalltag.">
   <title>PaBaApps</title>
 
   <style>
@@ -32,6 +32,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 20px;
     }
 
     .brand {
@@ -42,6 +43,33 @@
 
     .brand span {
       color: #ff9800;
+    }
+
+    .language-switch {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px;
+      border: 1px solid #303030;
+      border-radius: 10px;
+      background: #1d1d1d;
+    }
+
+    .language-switch button {
+      border: 0;
+      background: transparent;
+      color: #bdbdbd;
+      padding: 7px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .language-switch button.active {
+      background: #ff9800;
+      color: #121212;
     }
 
     .hero {
@@ -157,6 +185,10 @@
     }
 
     @media (max-width: 600px) {
+      nav {
+        align-items: flex-start;
+      }
+
       .hero {
         padding-top: 70px;
       }
@@ -173,6 +205,11 @@
 <header>
   <nav>
     <div class="brand">PaBa<span>Apps</span></div>
+
+    <div class="language-switch" aria-label="Language">
+      <button id="langDe" type="button" onclick="setLanguage('de')">DE</button>
+      <button id="langEn" type="button" onclick="setLanguage('en')">EN</button>
+    </div>
   </nav>
 </header>
 
@@ -181,9 +218,9 @@
   <section class="hero">
     <div class="eyebrow">PaBaApps</div>
 
-    <h1>Digitale Werkzeuge für den Arbeitsalltag.</h1>
+    <h1 id="heroTitle">Digitale Werkzeuge für den Arbeitsalltag.</h1>
 
-    <p>
+    <p id="heroText">
       PaBaApps entwickelt praktische Anwendungen mit dem Ziel,
       alltägliche Arbeitsabläufe einfacher, übersichtlicher und
       effizienter zu gestalten.
@@ -192,7 +229,7 @@
 
   <section class="apps">
 
-    <h2>Unsere Apps</h2>
+    <h2 id="appsTitle">Unsere Apps</h2>
 
     <div class="card">
 
@@ -201,16 +238,16 @@
         <h3>JobStamp</h3>
       </div>
 
-      <p>
+      <p id="jobstampText">
         JobStamp unterstützt Handwerksbetriebe bei der digitalen
         Erfassung von Arbeits- und Wegezeiten, Aufträgen, Mitarbeitern,
         Material und weiteren Informationen rund um den Arbeitsalltag.
       </p>
 
       <div class="links">
-        <a href="/jobstamp/datenschutz.html">Datenschutz</a>
-        <a href="/jobstamp/impressum.html">Impressum</a>
-        <a href="/jobstamp/konto-loeschen.html">Konto &amp; Daten löschen</a>
+        <a id="privacyLink" href="/jobstamp/datenschutz.html">Datenschutz</a>
+        <a id="imprintLink" href="/jobstamp/impressum.html">Impressum</a>
+        <a id="deleteLink" href="/jobstamp/konto-loeschen.html">Konto &amp; Daten löschen</a>
       </div>
 
     </div>
@@ -225,12 +262,110 @@
     <div>© 2026 PaBaApps</div>
 
     <div class="footer-links">
-      <a href="/jobstamp/datenschutz.html">Datenschutz</a>
-      <a href="/jobstamp/impressum.html">Impressum</a>
+      <a id="footerPrivacyLink" href="/jobstamp/datenschutz.html">Datenschutz</a>
+      <a id="footerImprintLink" href="/jobstamp/impressum.html">Impressum</a>
     </div>
 
   </div>
 </footer>
+
+<script>
+  const translations = {
+    de: {
+      htmlLang: 'de',
+      metaDescription: 'PaBaApps – Digitale Werkzeuge für den Arbeitsalltag.',
+      heroTitle: 'Digitale Werkzeuge für den Arbeitsalltag.',
+      heroText:
+        'PaBaApps entwickelt praktische Anwendungen mit dem Ziel, alltägliche Arbeitsabläufe einfacher, übersichtlicher und effizienter zu gestalten.',
+      appsTitle: 'Unsere Apps',
+      jobstampText:
+        'JobStamp unterstützt Handwerksbetriebe bei der digitalen Erfassung von Arbeits- und Wegezeiten, Aufträgen, Mitarbeitern, Material und weiteren Informationen rund um den Arbeitsalltag.',
+      privacyText: 'Datenschutz',
+      privacyHref: '/jobstamp/datenschutz.html',
+      imprintText: 'Impressum',
+      imprintHref: '/jobstamp/impressum.html',
+      deleteText: 'Konto & Daten löschen',
+      deleteHref: '/jobstamp/konto-loeschen.html'
+    },
+    en: {
+      htmlLang: 'en',
+      metaDescription: 'PaBaApps – Practical digital tools for everyday work.',
+      heroTitle: 'Digital tools for everyday work.',
+      heroText:
+        'PaBaApps develops practical applications designed to make everyday work processes simpler, clearer and more efficient.',
+      appsTitle: 'Our apps',
+      jobstampText:
+        'JobStamp helps skilled-trade businesses digitally record and manage working and travel times, jobs, employees, materials and other information used in day-to-day operations.',
+      privacyText: 'Privacy Policy',
+      privacyHref: '/jobstamp/privacy.html',
+      imprintText: 'Legal Notice',
+      imprintHref: '/jobstamp/imprint.html',
+      deleteText: 'Delete account & data',
+      deleteHref: '/jobstamp/delete-account.html'
+    }
+  };
+
+  function setLanguage(language) {
+    const selected = translations[language] || translations.de;
+
+    document.documentElement.lang = selected.htmlLang;
+    document.getElementById('metaDescription').setAttribute(
+      'content',
+      selected.metaDescription
+    );
+
+    document.getElementById('heroTitle').textContent = selected.heroTitle;
+    document.getElementById('heroText').textContent = selected.heroText;
+    document.getElementById('appsTitle').textContent = selected.appsTitle;
+    document.getElementById('jobstampText').textContent = selected.jobstampText;
+
+    const privacyLink = document.getElementById('privacyLink');
+    privacyLink.textContent = selected.privacyText;
+    privacyLink.href = selected.privacyHref;
+
+    const imprintLink = document.getElementById('imprintLink');
+    imprintLink.textContent = selected.imprintText;
+    imprintLink.href = selected.imprintHref;
+
+    const deleteLink = document.getElementById('deleteLink');
+    deleteLink.textContent = selected.deleteText;
+    deleteLink.href = selected.deleteHref;
+
+    const footerPrivacyLink = document.getElementById('footerPrivacyLink');
+    footerPrivacyLink.textContent = selected.privacyText;
+    footerPrivacyLink.href = selected.privacyHref;
+
+    const footerImprintLink = document.getElementById('footerImprintLink');
+    footerImprintLink.textContent = selected.imprintText;
+    footerImprintLink.href = selected.imprintHref;
+
+    document.getElementById('langDe').classList.toggle(
+      'active',
+      language === 'de'
+    );
+    document.getElementById('langEn').classList.toggle(
+      'active',
+      language === 'en'
+    );
+
+    localStorage.setItem('pabaapps-language', language);
+  }
+
+  function getInitialLanguage() {
+    const saved = localStorage.getItem('pabaapps-language');
+
+    if (saved === 'de' || saved === 'en') {
+      return saved;
+    }
+
+    return navigator.language &&
+      navigator.language.toLowerCase().startsWith('de')
+        ? 'de'
+        : 'en';
+  }
+
+  setLanguage(getInitialLanguage());
+</script>
 
 </body>
 </html>
