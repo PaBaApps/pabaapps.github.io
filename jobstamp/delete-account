@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobStamp – Delete account & data</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#121212;color:#f5f5f5;line-height:1.72}
+header{border-bottom:1px solid #2c2c2c;background:#181818;position:sticky;top:0;z-index:10}
+nav{max-width:960px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{font-size:1.35rem;font-weight:700}.brand span{color:#ff9800}
+.navlinks{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+a{color:#ffab40;text-decoration:none}a:hover{text-decoration:underline}
+main{max-width:960px;margin:auto;padding:64px 24px 100px}
+.eyebrow{color:#ff9800;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;font-size:.8rem;margin-bottom:10px}
+h1{font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.08;margin-bottom:12px}
+.lead{color:#bdbdbd;font-size:1.08rem;margin-bottom:34px}
+section{scroll-margin-top:90px;margin-top:38px}
+h2{font-size:1.42rem;margin-bottom:14px}h3{font-size:1.08rem;margin:18px 0 7px}
+p{margin-bottom:14px}ul,ol{margin:10px 0 18px 24px}li{margin-bottom:7px}
+.box{background:#1d1d1d;border:1px solid #303030;border-radius:14px;padding:20px;margin:16px 0}
+.important{border-left:4px solid #ff9800}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+footer{border-top:1px solid #2c2c2c;color:#8d8d8d;padding:30px 24px}
+.footer-inner{max-width:960px;margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+@media(max-width:700px){main{padding-top:44px}nav{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><nav>
+<div class="brand">PaBa<span>Apps</span></div>
+<div class="navlinks"><a href="/">Home</a><a href="/jobstamp/konto-loeschen.html">Deutsch</a></div>
+</nav></header>
+<main>
+<div class="eyebrow">JobStamp</div>
+<h1>Delete account & data</h1>
+<p class="lead">Learn how to delete your JobStamp account and associated personal account data.</p>
+
+<section><h2>Delete your account directly in JobStamp</h2>
+<p>If you still have access to the app, you can initiate deletion directly in JobStamp.</p>
+<div class="box"><ol><li>Open JobStamp.</li><li>Open Settings.</li><li>Go to your user account section.</li><li>Select <strong>“Delete account”</strong>.</li><li>Confirm the deletion as described in the app.</li></ol></div>
+</section>
+<section><h2>Request deletion without access to the app</h2>
+<p>If you no longer have access to JobStamp, you can request account deletion by email.</p>
+<div class="box important"><p><strong><a href="mailto:pabaapps@web.de?subject=JobStamp%20-%20Account%20deletion">pabaapps@web.de</a></strong></p><p>If possible, use the email address registered with your JobStamp account so we can identify the account.</p></div>
+</section>
+<section><h2>What is removed?</h2>
+<ul><li>the JobStamp sign-in account,</li><li>personal account links and company memberships,</li><li>the link between the account and an employee profile,</li><li>personal profile data where no longer required,</li><li>personally assigned feedback and active personal timer data.</li></ul>
+<p>Business records may be anonymised or detached from the deleted user identifier where they must be retained for legal or operational documentation purposes.</p>
+</section>
+<section><h2>Special case for company owners</h2>
+<p>If the account is the last owner of a company, ownership must first be transferred to another linked user account or the company and its associated company data must be permanently deleted.</p>
+</section>
+<section><h2>Retention obligations</h2>
+<p>Where legal obligations or other lawful grounds require certain data to be retained, the data will only be processed for the required retention period and deleted afterwards.</p>
+</section>
+
+</main>
+<footer><div class="footer-inner">
+<div>© 2026 PaBaApps · JobStamp</div>
+<div><a href="/jobstamp/privacy.html">Privacy</a> · <a href="/jobstamp/imprint.html">Legal Notice</a> · <a href="/jobstamp/delete-account.html">Delete account</a></div>
+</div></footer>
+</body></html>
