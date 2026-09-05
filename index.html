@@ -1,9 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta id="metaDescription" name="description" content="PaBaApps – Digitale Werkzeuge für den Arbeitsalltag.">
+  <meta
+    id="metaDescription"
+    name="description"
+    content="PaBaApps – Praktische digitale Anwendungen für Arbeit und Alltag."
+  >
+
   <title>PaBaApps</title>
 
   <style>
@@ -95,7 +101,7 @@
     }
 
     .hero p {
-      max-width: 700px;
+      max-width: 720px;
       color: #bdbdbd;
       font-size: 1.15rem;
     }
@@ -111,12 +117,20 @@
       margin-bottom: 25px;
     }
 
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
     .card {
       background: #1d1d1d;
       border: 1px solid #303030;
       border-radius: 18px;
       padding: 32px;
-      max-width: 700px;
+      display: flex;
+      flex-direction: column;
     }
 
     .app-name {
@@ -129,6 +143,7 @@
     .app-icon {
       width: 46px;
       height: 46px;
+      min-width: 46px;
       border-radius: 12px;
       background: #ff9800;
       color: #121212;
@@ -136,7 +151,7 @@
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 1.2rem;
+      font-size: 1.05rem;
     }
 
     .card h3 {
@@ -146,6 +161,7 @@
     .card p {
       color: #bdbdbd;
       margin-bottom: 22px;
+      flex-grow: 1;
     }
 
     .links {
@@ -184,6 +200,12 @@
       gap: 18px;
     }
 
+    @media (max-width: 760px) {
+      .app-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 600px) {
       nav {
         align-items: flex-start;
@@ -196,6 +218,10 @@
       .card {
         padding: 24px;
       }
+
+      .footer-inner {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -207,8 +233,13 @@
     <div class="brand">PaBa<span>Apps</span></div>
 
     <div class="language-switch" aria-label="Language">
-      <button id="langDe" type="button" onclick="setLanguage('de')">DE</button>
-      <button id="langEn" type="button" onclick="setLanguage('en')">EN</button>
+      <button id="langDe" type="button" onclick="setLanguage('de')">
+        DE
+      </button>
+
+      <button id="langEn" type="button" onclick="setLanguage('en')">
+        EN
+      </button>
     </div>
   </nav>
 </header>
@@ -218,12 +249,14 @@
   <section class="hero">
     <div class="eyebrow">PaBaApps</div>
 
-    <h1 id="heroTitle">Digitale Werkzeuge für den Arbeitsalltag.</h1>
+    <h1 id="heroTitle">
+      Praktische Apps für Arbeit und Alltag.
+    </h1>
 
     <p id="heroText">
       PaBaApps entwickelt praktische Anwendungen mit dem Ziel,
-      alltägliche Arbeitsabläufe einfacher, übersichtlicher und
-      effizienter zu gestalten.
+      alltägliche Abläufe einfacher, übersichtlicher und effizienter
+      zu gestalten.
     </p>
   </section>
 
@@ -231,23 +264,71 @@
 
     <h2 id="appsTitle">Unsere Apps</h2>
 
-    <div class="card">
+    <div class="app-grid">
 
-      <div class="app-name">
-        <div class="app-icon">JS</div>
-        <h3>JobStamp</h3>
+      <!-- JobStamp -->
+      <div class="card">
+
+        <div class="app-name">
+          <div class="app-icon">JS</div>
+          <h3>JobStamp</h3>
+        </div>
+
+        <p id="jobstampText">
+          JobStamp unterstützt Handwerks- und Servicebetriebe bei der
+          digitalen Erfassung von Arbeits- und Wegezeiten, Aufträgen,
+          Mitarbeitern, Material und weiteren Informationen rund um
+          den Arbeitsalltag.
+        </p>
+
+        <div class="links">
+          <a
+            id="jobstampPrivacyLink"
+            href="/jobstamp/datenschutz.html"
+          >
+            Datenschutz
+          </a>
+
+          <a
+            id="jobstampImprintLink"
+            href="/jobstamp/impressum.html"
+          >
+            Impressum
+          </a>
+
+          <a
+            id="jobstampDeleteLink"
+            href="/jobstamp/konto-loeschen.html"
+          >
+            Konto &amp; Daten löschen
+          </a>
+        </div>
+
       </div>
 
-      <p id="jobstampText">
-        JobStamp unterstützt Handwerksbetriebe bei der digitalen
-        Erfassung von Arbeits- und Wegezeiten, Aufträgen, Mitarbeitern,
-        Material und weiteren Informationen rund um den Arbeitsalltag.
-      </p>
+      <!-- ShiftInsight -->
+      <div class="card">
 
-      <div class="links">
-        <a id="privacyLink" href="/jobstamp/datenschutz.html">Datenschutz</a>
-        <a id="imprintLink" href="/jobstamp/impressum.html">Impressum</a>
-        <a id="deleteLink" href="/jobstamp/konto-loeschen.html">Konto &amp; Daten löschen</a>
+        <div class="app-name">
+          <div class="app-icon">SI</div>
+          <h3>ShiftInsight – Schichtplaner</h3>
+        </div>
+
+        <p id="shiftInsightText">
+          ShiftInsight unterstützt Schichtarbeiter bei der übersichtlichen
+          Planung ihrer Schichten, Arbeitszeiten, Zuschläge und Verdienste
+          sowie bei der gemeinsamen Schichtplanung mit einem Partner.
+        </p>
+
+        <div class="links">
+          <a
+            id="shiftInsightPrivacyLink"
+            href="/shiftinsight/datenschutz.html"
+          >
+            Datenschutz
+          </a>
+        </div>
+
       </div>
 
     </div>
@@ -259,113 +340,361 @@
 <footer>
   <div class="footer-inner">
 
-    <div>© 2026 PaBaApps</div>
+    <div>
+      © 2026 PaBaApps
+    </div>
 
     <div class="footer-links">
-      <a id="footerPrivacyLink" href="/jobstamp/datenschutz.html">Datenschutz</a>
-      <a id="footerImprintLink" href="/jobstamp/impressum.html">Impressum</a>
+
+      <a
+        id="footerJobstampPrivacyLink"
+        href="/jobstamp/datenschutz.html"
+      >
+        JobStamp Datenschutz
+      </a>
+
+      <a
+        id="footerShiftInsightPrivacyLink"
+        href="/shiftinsight/datenschutz.html"
+      >
+        ShiftInsight Datenschutz
+      </a>
+
+      <a
+        id="footerImprintLink"
+        href="/jobstamp/impressum.html"
+      >
+        Impressum
+      </a>
+
     </div>
 
   </div>
 </footer>
 
+
 <script>
+
   const translations = {
+
     de: {
+
       htmlLang: 'de',
-      metaDescription: 'PaBaApps – Digitale Werkzeuge für den Arbeitsalltag.',
-      heroTitle: 'Digitale Werkzeuge für den Arbeitsalltag.',
+
+      metaDescription:
+        'PaBaApps – Praktische digitale Anwendungen für Arbeit und Alltag.',
+
+      heroTitle:
+        'Praktische Apps für Arbeit und Alltag.',
+
       heroText:
-        'PaBaApps entwickelt praktische Anwendungen mit dem Ziel, alltägliche Arbeitsabläufe einfacher, übersichtlicher und effizienter zu gestalten.',
-      appsTitle: 'Unsere Apps',
+        'PaBaApps entwickelt praktische Anwendungen mit dem Ziel, alltägliche Abläufe einfacher, übersichtlicher und effizienter zu gestalten.',
+
+      appsTitle:
+        'Unsere Apps',
+
       jobstampText:
-        'JobStamp unterstützt Handwerksbetriebe bei der digitalen Erfassung von Arbeits- und Wegezeiten, Aufträgen, Mitarbeitern, Material und weiteren Informationen rund um den Arbeitsalltag.',
-      privacyText: 'Datenschutz',
-      privacyHref: '/jobstamp/datenschutz.html',
-      imprintText: 'Impressum',
-      imprintHref: '/jobstamp/impressum.html',
-      deleteText: 'Konto & Daten löschen',
-      deleteHref: '/jobstamp/konto-loeschen.html'
+        'JobStamp unterstützt Handwerks- und Servicebetriebe bei der digitalen Erfassung von Arbeits- und Wegezeiten, Aufträgen, Mitarbeitern, Material und weiteren Informationen rund um den Arbeitsalltag.',
+
+      shiftInsightText:
+        'ShiftInsight unterstützt Schichtarbeiter bei der übersichtlichen Planung ihrer Schichten, Arbeitszeiten, Zuschläge und Verdienste sowie bei der gemeinsamen Schichtplanung mit einem Partner.',
+
+      privacyText:
+        'Datenschutz',
+
+      imprintText:
+        'Impressum',
+
+      deleteText:
+        'Konto & Daten löschen',
+
+      jobstampPrivacyHref:
+        '/jobstamp/datenschutz.html',
+
+      jobstampImprintHref:
+        '/jobstamp/impressum.html',
+
+      jobstampDeleteHref:
+        '/jobstamp/konto-loeschen.html',
+
+      shiftInsightPrivacyHref:
+        '/shiftinsight/datenschutz.html',
+
+      footerJobstampPrivacyText:
+        'JobStamp Datenschutz',
+
+      footerShiftInsightPrivacyText:
+        'ShiftInsight Datenschutz'
     },
+
+
     en: {
+
       htmlLang: 'en',
-      metaDescription: 'PaBaApps – Practical digital tools for everyday work.',
-      heroTitle: 'Digital tools for everyday work.',
+
+      metaDescription:
+        'PaBaApps – Practical digital applications for work and everyday life.',
+
+      heroTitle:
+        'Practical apps for work and everyday life.',
+
       heroText:
-        'PaBaApps develops practical applications designed to make everyday work processes simpler, clearer and more efficient.',
-      appsTitle: 'Our apps',
+        'PaBaApps develops practical applications designed to make everyday processes simpler, clearer and more efficient.',
+
+      appsTitle:
+        'Our apps',
+
       jobstampText:
-        'JobStamp helps skilled-trade businesses digitally record and manage working and travel times, jobs, employees, materials and other information used in day-to-day operations.',
-      privacyText: 'Privacy Policy',
-      privacyHref: '/jobstamp/privacy.html',
-      imprintText: 'Legal Notice',
-      imprintHref: '/jobstamp/imprint.html',
-      deleteText: 'Delete account & data',
-      deleteHref: '/jobstamp/delete-account.html'
+        'JobStamp helps skilled-trade and service businesses digitally record and manage working and travel times, jobs, employees, materials and other information used in day-to-day operations.',
+
+      shiftInsightText:
+        'ShiftInsight helps shift workers clearly plan their shifts, working times, premiums and earnings while also supporting shared shift planning with a partner.',
+
+      privacyText:
+        'Privacy Policy',
+
+      imprintText:
+        'Legal Notice',
+
+      deleteText:
+        'Delete account & data',
+
+      jobstampPrivacyHref:
+        '/jobstamp/privacy.html',
+
+      jobstampImprintHref:
+        '/jobstamp/imprint.html',
+
+      jobstampDeleteHref:
+        '/jobstamp/delete-account.html',
+
+      shiftInsightPrivacyHref:
+        '/shiftinsight/privacy.html',
+
+      footerJobstampPrivacyText:
+        'JobStamp Privacy',
+
+      footerShiftInsightPrivacyText:
+        'ShiftInsight Privacy'
     }
+
   };
 
+
   function setLanguage(language) {
-    const selected = translations[language] || translations.de;
 
-    document.documentElement.lang = selected.htmlLang;
-    document.getElementById('metaDescription').setAttribute(
-      'content',
-      selected.metaDescription
+    const selected =
+      translations[language] || translations.de;
+
+
+    document.documentElement.lang =
+      selected.htmlLang;
+
+
+    document
+      .getElementById('metaDescription')
+      .setAttribute(
+        'content',
+        selected.metaDescription
+      );
+
+
+    document.getElementById(
+      'heroTitle'
+    ).textContent =
+      selected.heroTitle;
+
+
+    document.getElementById(
+      'heroText'
+    ).textContent =
+      selected.heroText;
+
+
+    document.getElementById(
+      'appsTitle'
+    ).textContent =
+      selected.appsTitle;
+
+
+    document.getElementById(
+      'jobstampText'
+    ).textContent =
+      selected.jobstampText;
+
+
+    document.getElementById(
+      'shiftInsightText'
+    ).textContent =
+      selected.shiftInsightText;
+
+
+
+    /*
+     * JobStamp
+     */
+
+    const jobstampPrivacyLink =
+      document.getElementById(
+        'jobstampPrivacyLink'
+      );
+
+    jobstampPrivacyLink.textContent =
+      selected.privacyText;
+
+    jobstampPrivacyLink.href =
+      selected.jobstampPrivacyHref;
+
+
+
+    const jobstampImprintLink =
+      document.getElementById(
+        'jobstampImprintLink'
+      );
+
+    jobstampImprintLink.textContent =
+      selected.imprintText;
+
+    jobstampImprintLink.href =
+      selected.jobstampImprintHref;
+
+
+
+    const jobstampDeleteLink =
+      document.getElementById(
+        'jobstampDeleteLink'
+      );
+
+    jobstampDeleteLink.textContent =
+      selected.deleteText;
+
+    jobstampDeleteLink.href =
+      selected.jobstampDeleteHref;
+
+
+
+    /*
+     * ShiftInsight
+     */
+
+    const shiftInsightPrivacyLink =
+      document.getElementById(
+        'shiftInsightPrivacyLink'
+      );
+
+    shiftInsightPrivacyLink.textContent =
+      selected.privacyText;
+
+    shiftInsightPrivacyLink.href =
+      selected.shiftInsightPrivacyHref;
+
+
+
+    /*
+     * Footer
+     */
+
+    const footerJobstampPrivacyLink =
+      document.getElementById(
+        'footerJobstampPrivacyLink'
+      );
+
+    footerJobstampPrivacyLink.textContent =
+      selected.footerJobstampPrivacyText;
+
+    footerJobstampPrivacyLink.href =
+      selected.jobstampPrivacyHref;
+
+
+
+    const footerShiftInsightPrivacyLink =
+      document.getElementById(
+        'footerShiftInsightPrivacyLink'
+      );
+
+    footerShiftInsightPrivacyLink.textContent =
+      selected.footerShiftInsightPrivacyText;
+
+    footerShiftInsightPrivacyLink.href =
+      selected.shiftInsightPrivacyHref;
+
+
+
+    const footerImprintLink =
+      document.getElementById(
+        'footerImprintLink'
+      );
+
+    footerImprintLink.textContent =
+      selected.imprintText;
+
+    footerImprintLink.href =
+      selected.jobstampImprintHref;
+
+
+
+    /*
+     * Language buttons
+     */
+
+    document
+      .getElementById('langDe')
+      .classList.toggle(
+        'active',
+        language === 'de'
+      );
+
+
+    document
+      .getElementById('langEn')
+      .classList.toggle(
+        'active',
+        language === 'en'
+      );
+
+
+    localStorage.setItem(
+      'pabaapps-language',
+      language
     );
 
-    document.getElementById('heroTitle').textContent = selected.heroTitle;
-    document.getElementById('heroText').textContent = selected.heroText;
-    document.getElementById('appsTitle').textContent = selected.appsTitle;
-    document.getElementById('jobstampText').textContent = selected.jobstampText;
-
-    const privacyLink = document.getElementById('privacyLink');
-    privacyLink.textContent = selected.privacyText;
-    privacyLink.href = selected.privacyHref;
-
-    const imprintLink = document.getElementById('imprintLink');
-    imprintLink.textContent = selected.imprintText;
-    imprintLink.href = selected.imprintHref;
-
-    const deleteLink = document.getElementById('deleteLink');
-    deleteLink.textContent = selected.deleteText;
-    deleteLink.href = selected.deleteHref;
-
-    const footerPrivacyLink = document.getElementById('footerPrivacyLink');
-    footerPrivacyLink.textContent = selected.privacyText;
-    footerPrivacyLink.href = selected.privacyHref;
-
-    const footerImprintLink = document.getElementById('footerImprintLink');
-    footerImprintLink.textContent = selected.imprintText;
-    footerImprintLink.href = selected.imprintHref;
-
-    document.getElementById('langDe').classList.toggle(
-      'active',
-      language === 'de'
-    );
-    document.getElementById('langEn').classList.toggle(
-      'active',
-      language === 'en'
-    );
-
-    localStorage.setItem('pabaapps-language', language);
   }
 
-  function getInitialLanguage() {
-    const saved = localStorage.getItem('pabaapps-language');
 
-    if (saved === 'de' || saved === 'en') {
+  function getInitialLanguage() {
+
+    const saved =
+      localStorage.getItem(
+        'pabaapps-language'
+      );
+
+
+    if (
+      saved === 'de' ||
+      saved === 'en'
+    ) {
       return saved;
     }
 
-    return navigator.language &&
-      navigator.language.toLowerCase().startsWith('de')
-        ? 'de'
-        : 'en';
+
+    return (
+      navigator.language &&
+      navigator.language
+        .toLowerCase()
+        .startsWith('de')
+    )
+      ? 'de'
+      : 'en';
+
   }
 
-  setLanguage(getInitialLanguage());
+
+  setLanguage(
+    getInitialLanguage()
+  );
+
 </script>
 
 </body>
 </html>
+```
