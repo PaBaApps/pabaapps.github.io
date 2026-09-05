@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy Policy for the ShiftInsight – Shift Planner mobile application by PaBaApps.">
+<title>ShiftInsight – Privacy Policy</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#121212;color:#f5f5f5;line-height:1.72}
+header{border-bottom:1px solid #2c2c2c;background:#181818;position:sticky;top:0;z-index:10}
+nav{max-width:960px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{font-size:1.35rem;font-weight:700}.brand span{color:#ff9800}
+a{color:#ffab40;text-decoration:none}a:hover{text-decoration:underline}
+main{max-width:960px;margin:auto;padding:64px 24px 100px}
+.eyebrow{color:#ff9800;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;font-size:.8rem;margin-bottom:10px}
+h1{font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.08;margin-bottom:12px}
+.lead{color:#bdbdbd;font-size:1.08rem;margin-bottom:34px}
+.toc{background:#1d1d1d;border:1px solid #303030;border-radius:16px;padding:24px;margin:28px 0 52px}
+.toc h2{margin:0 0 12px}.toc ol{columns:2;column-gap:36px;margin-left:22px}
+.toc li{margin-bottom:7px;break-inside:avoid}
+section{scroll-margin-top:90px;margin-top:42px}
+h2{font-size:1.42rem;margin-bottom:14px}h3{font-size:1.08rem;margin:18px 0 7px}
+p{margin-bottom:14px}ul,ol{margin:10px 0 18px 24px}li{margin-bottom:7px}
+.box{background:#1d1d1d;border:1px solid #303030;border-radius:14px;padding:20px;margin:16px 0}
+.important{border-left:4px solid #ff9800}
+footer{border-top:1px solid #2c2c2c;color:#8d8d8d;padding:30px 24px}
+.footer-inner{max-width:960px;margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+@media(max-width:700px){.toc ol{columns:1}main{padding-top:44px}nav{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="brand">PaBa<span>Apps</span></div>
+<div><a href="/">Home</a> &nbsp;·&nbsp; <a href="/shiftinsight/datenschutz.html">Deutsch</a></div>
+</nav>
+</header>
+
+<main>
+<div class="eyebrow">ShiftInsight – Shift Planner</div>
+<h1>Privacy Policy</h1>
+<p class="lead">Privacy Policy for the mobile application “ShiftInsight – Shift Planner”<br><strong>Last updated: September 2026</strong></p>
+
+<div class="toc">
+<h2>Contents</h2>
+<ol>
+<li><a href="#s1">Controller</a></li>
+<li><a href="#s2">Scope</a></li>
+<li><a href="#s3">Principles and legal bases</a></li>
+<li><a href="#s4">Local data storage</a></li>
+<li><a href="#s5">User account and email sign-in</a></li>
+<li><a href="#s6">Firebase Authentication</a></li>
+<li><a href="#s7">Cloud synchronization with Firestore</a></li>
+<li><a href="#s8">Shift and calendar data</a></li>
+<li><a href="#s9">Partner feature and invitations</a></li>
+<li><a href="#s10">Holidays and premium rules</a></li>
+<li><a href="#s11">Earnings and working-time data</a></li>
+<li><a href="#s12">Google Play and Premium purchase</a></li>
+<li><a href="#s13">Feedback and email contact</a></li>
+<li><a href="#s14">No advertising / no independent tracking</a></li>
+<li><a href="#s15">Service providers</a></li>
+<li><a href="#s16">International transfers</a></li>
+<li><a href="#s17">Data security</a></li>
+<li><a href="#s18">Retention</a></li>
+<li><a href="#s19">Sign-out, account deletion and data deletion</a></li>
+<li><a href="#s20">Your rights</a></li>
+<li><a href="#s21">Right to complain</a></li>
+<li><a href="#s22">GitHub Pages</a></li>
+<li><a href="#s23">Changes to this policy</a></li>
+<li><a href="#s24">Contact and version</a></li>
+</ol>
+</div>
+
+<section id="s1"><h2>1. Controller</h2>
+<p>The controller for purposes of the GDPR and other applicable data-protection laws is:</p>
+<div class="box"><p><strong>Patrick Baust</strong><br>PaBaApps<br>Christophorusweg 5<br>59889 Eslohe (Sauerland)<br>Germany<br>Email: <a href="mailto:pabaapps@web.de">pabaapps@web.de</a></p></div>
+</section>
+
+<section id="s2"><h2>2. Scope</h2>
+<p>This Privacy Policy explains how personal data is processed when using the mobile application <strong>ShiftInsight – Shift Planner</strong> and its related online features.</p>
+<p>ShiftInsight is designed for personal shift planning and evaluation, including working times, premiums, estimated earnings, vacation, sickness, holidays and, if enabled, sharing selected shift information with a partner.</p>
+</section>
+
+<section id="s3"><h2>3. Principles and legal bases</h2>
+<p>Personal data is processed only to the extent necessary to provide the features you use. We apply principles of data minimisation, purpose limitation, storage limitation and appropriate technical and organisational safeguards.</p>
+<ul>
+<li><strong>Art. 6(1)(b) GDPR:</strong> providing the app, user accounts, synchronization and requested features.</li>
+<li><strong>Art. 6(1)(a) GDPR:</strong> where processing is based on your voluntary consent.</li>
+<li><strong>Art. 6(1)(f) GDPR:</strong> legitimate interests, particularly secure and stable operation and abuse prevention.</li>
+<li><strong>Art. 6(1)(c) GDPR:</strong> where processing is necessary to comply with a legal obligation.</li>
+</ul>
+</section>
+
+<section id="s4"><h2>4. Local data storage</h2>
+<p>A substantial part of ShiftInsight data is stored locally on your device using local app storage, including Hive.</p>
+<p>Depending on how you use the app, locally stored data may include shift/calendar entries, custom shifts and colors, shift patterns, working-time and wage settings, premium rules, vacation and sickness entries, manual holidays, partner shift entries, language and display settings, and technical identifiers needed for cloud/partner features.</p>
+<p>Local storage alone does not transmit this data to PaBaApps or a cloud provider. Data is transferred only when you use the online, account or synchronization features described below.</p>
+</section>
+
+<section id="s5"><h2>5. User account and email sign-in</h2>
+<p>ShiftInsight supports accounts using an email address and password. Accounts are used to identify users and to provide cloud-based functionality, restoration and synchronization.</p>
+<p>Registration and sign-in may process your email address, a unique user ID (UID), authentication information and technical login data. PaBaApps does not store your password in plain text; authentication is provided through Google Firebase Authentication.</p>
+</section>
+
+<section id="s6"><h2>6. Firebase Authentication</h2>
+<p>ShiftInsight uses <strong>Firebase Authentication</strong> by Google for registration, sign-in and password reset.</p>
+<p>According to Google, Firebase Authentication may process data including email addresses, passwords, IP addresses and user-agent information for authentication, account management, security and abuse prevention.</p>
+<p>Google states that Firebase Authentication is operated from data centers in the United States. More information: <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase – Privacy and Security</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+</section>
+
+<section id="s7"><h2>7. Cloud synchronization with Cloud Firestore</h2>
+<p>ShiftInsight uses <strong>Google Cloud Firestore / Firebase Firestore</strong> for certain cloud and partner features.</p>
+<p>Depending on the features used and the app version, Firestore may store or synchronize shift entries, shared-calendar membership, partner shift entries, manually created holidays, partner invitation/link information, and technical timestamps or identifiers.</p>
+<p>Cloud synchronization is used to make authorized calendar data available on eligible devices, synchronize partner calendars and associate cloud data with the correct account after sign-in.</p>
+<div class="box important"><p><strong>Important:</strong> Not every locally stored preference is automatically backed up to the cloud in every app version. The exact data synchronized depends on the currently implemented feature set.</p></div>
+</section>
+
+<section id="s8"><h2>8. Shift and calendar data</h2>
+<p>ShiftInsight processes information you enter or import for your personal shift planning, such as shift type, date, start/end time, breaks, vacation, sickness and labels or notes you choose to add.</p>
+<p>This data is used for calendar display, statistics, working-time and earnings calculations and, where enabled, synchronization.</p>
+<p>ShiftInsight does not automatically send your shift, working-time or earnings data to employers, authorities, insurers or other third parties.</p>
+</section>
+
+<section id="s9"><h2>9. Partner feature and invitations</h2>
+<p>ShiftInsight can connect two users' shift calendars. Depending on the app version, the connection can be established using an invite code or the email address associated with the partner's ShiftInsight account.</p>
+<p>Data processed for this feature may include the connected users' IDs, the invited account's email address, invite code/shared-calendar ID, invitation or link status, and shift/calendar information made available through the shared partner calendar.</p>
+<p>The email address is used only to identify or connect the intended ShiftInsight account. Linking a partner does not automatically share unrelated local device or display preferences.</p>
+</section>
+
+<section id="s10"><h2>10. Holidays and premium rules</h2>
+<p>ShiftInsight can take public/configured holidays and manually created holidays into account. Manual holidays may form part of synchronized calendar data when cloud or partner features are used.</p>
+<p>The app may also store locally configured values for night, late, Sunday or public-holiday premiums and other compensation settings for your personal calculations.</p>
+</section>
+
+<section id="s11"><h2>11. Earnings and working-time data</h2>
+<p>ShiftInsight may process hourly wage, shift times, break times, premium percentages, vacation entitlement and calculated values in order to display working time, premiums and estimated earnings.</p>
+<p>Values shown in the app are personal planning/calculation values and do not replace an official payslip, tax advice or legal employment advice.</p>
+</section>
+
+<section id="s12"><h2>12. Google Play and Premium purchase</h2>
+<p>ShiftInsight may offer optional paid features through <strong>Google Play Billing</strong>. Payment processing is handled by Google Play.</p>
+<p>PaBaApps does not receive your full credit-card or bank-account details. Technical purchase/product information may be processed to unlock or restore a purchase, for example product ID and purchase status.</p>
+<p>Google is independently responsible for processing data within Google Play. See the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+</section>
+
+<section id="s13"><h2>13. Feedback and email contact</h2>
+<p>If you use a feedback/contact feature, ShiftInsight may open the email application installed on your device with pre-filled recipient, subject or message information.</p>
+<p>No email is sent until you confirm sending it in your email application. The privacy rules of your email provider then apply.</p>
+<p>If you contact PaBaApps by email, we process the information you provide only to respond to your request and conduct necessary follow-up communication.</p>
+</section>
+
+<section id="s14"><h2>14. No advertising and no independent tracking</h2>
+<p>Under its current feature set, ShiftInsight does not use advertising SDKs or features intended to create advertising profiles.</p>
+<p>Firebase Authentication and Cloud Firestore are used for authentication, security, synchronization and partner features, not by PaBaApps to track users across unrelated apps or websites for advertising purposes.</p>
+</section>
+
+<section id="s15"><h2>15. Service providers</h2>
+<h3>Google Firebase / Google Cloud</h3>
+<p>Provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Depending on the service, other Google companies, including Google LLC in the United States, may participate in processing.</p>
+<p>Used services: Firebase Authentication and Cloud Firestore.</p>
+<p>More information: <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+<h3>Google Play</h3>
+<p>Google Play is used to distribute, install and update the app and, where applicable, process in-app purchases.</p>
+</section>
+
+<section id="s16"><h2>16. International data transfers</h2>
+<p>When Google/Firebase services are used, personal data may also be processed outside the European Union or European Economic Area, particularly in the United States.</p>
+<p>Google describes mechanisms for international transfers including the EU-U.S. Data Privacy Framework and contractual data-protection arrangements. Further information is available on Google's Firebase privacy pages.</p>
+</section>
+
+<section id="s17"><h2>17. Data security</h2>
+<p>We use appropriate technical and organisational measures to protect personal data, including encrypted HTTPS/TLS transmission, authenticated accounts and access controls for cloud data.</p>
+<p>According to Google, Cloud Firestore and Firebase Authentication encrypt data in transit and support encryption of stored data.</p>
+</section>
+
+<section id="s18"><h2>18. Retention</h2>
+<p>Local app data generally remains on the device until it is deleted in the app, removed during certain account changes, or the app/app data is deleted from the device.</p>
+<p>Cloud data is retained for as long as needed for account, synchronization or partner features or until deletion, unless legal obligations require longer retention. Technical authentication data is also subject to Google/Firebase retention periods.</p>
+</section>
+
+<section id="s19"><h2>19. Sign-out, account deletion and data deletion</h2>
+<p>Signing out may remove account-bound local calendar data from the device while cloud data can remain associated with the account so it can be restored after a later sign-in. Signing out is therefore not the same as deleting the account.</p>
+<p>If an in-app account deletion option is not yet available in the app version you use, you can request deletion of your ShiftInsight account and associated personal cloud data by emailing <a href="mailto:pabaapps@web.de">pabaapps@web.de</a>.</p>
+<p>For connected partner calendars, deletion may affect shared data and link information. Where technically and legally possible, personal associations will be removed without deleting the other partner's data without authorization.</p>
+</section>
+
+<section id="s20"><h2>20. Your rights</h2>
+<p>Subject to applicable legal requirements, you may have rights including access, rectification, erasure, restriction of processing, data portability, objection and withdrawal of consent for the future.</p>
+<p>To exercise these rights, contact <a href="mailto:pabaapps@web.de">pabaapps@web.de</a>.</p>
+</section>
+
+<section id="s21"><h2>21. Right to complain</h2>
+<p>You have the right to lodge a complaint with a competent data-protection supervisory authority if you believe the processing of your personal data violates applicable data-protection law.</p>
+</section>
+
+<section id="s22"><h2>22. Hosting of this privacy page via GitHub Pages</h2>
+<p>This Privacy Policy and other PaBaApps web pages are hosted using <strong>GitHub Pages</strong>. GitHub, Inc., a Microsoft company, provides this hosting service.</p>
+<p>When a GitHub Pages site is accessed, GitHub may process technically necessary connection data such as IP address, access time, requested resource and browser/device information to deliver and secure the website.</p>
+<p>More information: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub General Privacy Statement</a>.</p>
+</section>
+
+<section id="s23"><h2>23. Changes to this Privacy Policy</h2>
+<p>We may update this Privacy Policy when ShiftInsight features, service providers, technical processes or legal requirements change. The current version published on this page applies.</p>
+</section>
+
+<section id="s24"><h2>24. Contact and version</h2>
+<div class="box"><p><strong>Patrick Baust · PaBaApps</strong><br>Email: <a href="mailto:pabaapps@web.de">pabaapps@web.de</a><br>Last updated: September 2026</p></div>
+</section>
+</main>
+
+<footer>
+<div class="footer-inner">
+<div>© 2026 PaBaApps · ShiftInsight – Shift Planner</div>
+<div><a href="/">Home</a> · <a href="/shiftinsight/datenschutz.html">Deutsch</a></div>
+</div>
+</footer>
+</body>
+</html>
