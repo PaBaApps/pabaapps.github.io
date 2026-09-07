@@ -54,7 +54,7 @@ footer{border-top:1px solid #2c2c2c;color:#8d8d8d;padding:30px 24px}
 <li><a href="#s6">Firebase Authentication</a></li>
 <li><a href="#s7">Cloud synchronization with Firestore</a></li>
 <li><a href="#s8">Shift and calendar data</a></li>
-<li><a href="#s9">Partner feature and invitations</a></li>
+<li><a href="#s9">Partner feature and linking</a></li>
 <li><a href="#s10">Holidays and premium rules</a></li>
 <li><a href="#s11">Earnings and working-time data</a></li>
 <li><a href="#s12">Google Play and Premium purchase</a></li>
@@ -111,10 +111,19 @@ footer{border-top:1px solid #2c2c2c;color:#8d8d8d;padding:30px 24px}
 </section>
 
 <section id="s7"><h2>7. Cloud synchronization with Cloud Firestore</h2>
-<p>ShiftInsight uses <strong>Google Cloud Firestore / Firebase Firestore</strong> for certain cloud and partner features.</p>
-<p>Depending on the features used and the app version, Firestore may store or synchronize shift entries, shared-calendar membership, partner shift entries, manually created holidays, partner invitation/link information, and technical timestamps or identifiers.</p>
-<p>Cloud synchronization is used to make authorized calendar data available on eligible devices, synchronize partner calendars and associate cloud data with the correct account after sign-in.</p>
-<div class="box important"><p><strong>Important:</strong> Not every locally stored preference is automatically backed up to the cloud in every app version. The exact data synchronized depends on the currently implemented feature set.</p></div>
+<p>ShiftInsight uses <strong>Google Cloud Firestore / Firebase Firestore</strong> for certain account, cloud and partner features.</p>
+<p>Depending on the features used, Firestore may store or synchronize:</p>
+<ul>
+<li>shift entries and related calendar data,</li>
+<li>shared-calendar membership,</li>
+<li>partner shift entries within a shared calendar,</li>
+<li>manually created holidays,</li>
+<li>partner invitation and link information,</li>
+<li>selected account-related app settings intended for restoration or synchronization,</li>
+<li>technical timestamps and identifiers required for synchronization.</li>
+</ul>
+<p>Cloud synchronization is used to make authorized calendar data available on eligible devices, synchronize partner calendars and restore supported settings after signing in again.</p>
+<div class="box important"><p><strong>Important:</strong> Not every locally stored preference is automatically backed up to the cloud. Only data intended for the relevant synchronization feature is transmitted. Payment/Premium information and internal entitlement data are not treated as freely editable general user settings.</p></div>
 </section>
 
 <section id="s8"><h2>8. Shift and calendar data</h2>
@@ -123,9 +132,17 @@ footer{border-top:1px solid #2c2c2c;color:#8d8d8d;padding:30px 24px}
 <p>ShiftInsight does not automatically send your shift, working-time or earnings data to employers, authorities, insurers or other third parties.</p>
 </section>
 
-<section id="s9"><h2>9. Partner feature and invitations</h2>
-<p>ShiftInsight can connect two users' shift calendars. Depending on the app version, the connection can be established using an invite code or the email address associated with the partner's ShiftInsight account.</p>
-<p>Data processed for this feature may include the connected users' IDs, the invited account's email address, invite code/shared-calendar ID, invitation or link status, and shift/calendar information made available through the shared partner calendar.</p>
+<section id="s9"><h2>9. Partner feature and linking</h2>
+<p>ShiftInsight provides a partner feature that allows two users to connect their shift calendars. Linking is performed using the email address of the intended ShiftInsight partner account. ShiftInsight does not automatically send an email message as part of this linking process.</p>
+<p>Data processed for this feature may include:</p>
+<ul>
+<li>unique user IDs of the linked accounts,</li>
+<li>the email address of the invited or intended partner account,</li>
+<li>technical calendar and linking identifiers,</li>
+<li>invitation or link status,</li>
+<li>shift and calendar information intended for use in the shared calendar.</li>
+</ul>
+<p>If both users already have calendar data before linking, existing data may be merged into a shared calendar as part of the partner-linking process. Where different entries exist for the same person and calendar day, entries created by that person are generally preferred. Partner-entered information may be used to fill gaps where the person has no own entry for that date.</p>
 <p>The email address is used only to identify or connect the intended ShiftInsight account. Linking a partner does not automatically share unrelated local device or display preferences.</p>
 </section>
 
