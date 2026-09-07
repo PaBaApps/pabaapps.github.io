@@ -54,7 +54,7 @@ footer{border-top:1px solid #2c2c2c;color:#8d8d8d;padding:30px 24px}
 <li><a href="#s6">Firebase Authentication</a></li>
 <li><a href="#s7">Cloud-Synchronisierung mit Firestore</a></li>
 <li><a href="#s8">Schicht- und Kalenderdaten</a></li>
-<li><a href="#s9">Partnerfunktion und Einladungen</a></li>
+<li><a href="#s9">Partnerfunktion und Verknüpfung</a></li>
 <li><a href="#s10">Feiertage und Zuschlagsdaten</a></li>
 <li><a href="#s11">Verdienst- und Arbeitszeitdaten</a></li>
 <li><a href="#s12">Google Play und Premium-Kauf</a></li>
@@ -136,19 +136,20 @@ E-Mail: <a href="mailto:pabaapps@web.de">pabaapps@web.de</a></p>
 
 <section id="s7">
 <h2>7. Cloud-Synchronisierung mit Cloud Firestore</h2>
-<p>ShiftInsight verwendet <strong>Google Cloud Firestore / Firebase Firestore</strong> für bestimmte Cloud- und Partnerfunktionen.</p>
-<p>Abhängig vom verwendeten Funktionsumfang und der jeweiligen App-Version können insbesondere folgende Daten in Firestore gespeichert bzw. zwischen berechtigten Geräten synchronisiert werden:</p>
+<p>ShiftInsight verwendet <strong>Google Cloud Firestore / Firebase Firestore</strong> für bestimmte Konto-, Cloud- und Partnerfunktionen.</p>
+<p>Abhängig vom verwendeten Funktionsumfang können insbesondere folgende Daten in Firestore gespeichert bzw. zwischen berechtigten Geräten synchronisiert werden:</p>
 <ul>
 <li>Schichteinträge und zugehörige Kalenderdaten,</li>
 <li>Zuordnung eines Benutzers zu einem geteilten Kalender,</li>
 <li>Partner-Schichteinträge innerhalb eines gemeinsamen Kalenders,</li>
 <li>manuell angelegte Feiertage,</li>
 <li>Einladungs- und Verknüpfungsinformationen für die Partnerfunktion,</li>
+<li>bestimmte kontobezogene App-Einstellungen, soweit diese für Wiederherstellung oder Synchronisierung vorgesehen sind,</li>
 <li>technische Zeitstempel und Kennungen zur Synchronisierung.</li>
 </ul>
-<p>Die Cloud-Synchronisierung dient insbesondere dazu, Schichtdaten auf berechtigten Geräten bereitzustellen, Partnerkalender zu synchronisieren und Daten nach erneuter Anmeldung wieder einem Benutzerkonto zuzuordnen.</p>
+<p>Die Cloud-Synchronisierung dient insbesondere dazu, Schichtdaten auf berechtigten Geräten bereitzustellen, Partnerkalender zu synchronisieren und unterstützte Einstellungen nach erneuter Anmeldung wieder dem Benutzerkonto zuzuordnen.</p>
 <div class="box important">
-<p><strong>Wichtig:</strong> Nicht jede lokal gespeicherte Einstellung wird in jeder App-Version automatisch in der Cloud gesichert. Welche Daten tatsächlich synchronisiert werden, hängt vom jeweils implementierten Funktionsumfang ab.</p>
+<p><strong>Wichtig:</strong> Nicht sämtliche lokal gespeicherten Einstellungen werden automatisch in der Cloud gesichert. Es werden nur die für die jeweilige Synchronisierungsfunktion vorgesehenen Daten übertragen. Zahlungs- bzw. Premiuminformationen und interne Berechtigungsdaten werden nicht als frei änderbare allgemeine Benutzereinstellungen behandelt.</p>
 </div>
 </section>
 
@@ -160,16 +161,17 @@ E-Mail: <a href="mailto:pabaapps@web.de">pabaapps@web.de</a></p>
 </section>
 
 <section id="s9">
-<h2>9. Partnerfunktion und Einladungen</h2>
-<p>ShiftInsight bietet Funktionen, mit denen zwei Benutzer ihre Schichtkalender miteinander verbinden können. Die Verbindung kann je nach App-Version über einen Einladungscode oder über die E-Mail-Adresse des Partnerkontos hergestellt werden.</p>
+<h2>9. Partnerfunktion und Verknüpfung</h2>
+<p>ShiftInsight bietet eine Partnerfunktion, mit der zwei Benutzer ihre Schichtkalender miteinander verbinden können. Die Verknüpfung erfolgt über die E-Mail-Adresse des vorgesehenen ShiftInsight-Partnerkontos. Durch die Verknüpfung wird kein automatischer E-Mail-Versand durch ShiftInsight ausgelöst.</p>
 <p>Hierbei können insbesondere folgende Daten verarbeitet werden:</p>
 <ul>
 <li>eindeutige Benutzerkennungen der verbundenen Konten,</li>
-<li>E-Mail-Adresse des eingeladenen Partnerkontos,</li>
-<li>Einladungscode bzw. technische Kalenderkennung,</li>
+<li>E-Mail-Adresse des eingeladenen bzw. zu verknüpfenden Partnerkontos,</li>
+<li>technische Kalender- und Verknüpfungskennungen,</li>
 <li>Status einer Einladung oder Verknüpfung,</li>
-<li>Schicht- und Kalenderdaten, die für den gemeinsamen Kalender freigegeben werden.</li>
+<li>Schicht- und Kalenderdaten, die für den gemeinsamen Kalender vorgesehen sind.</li>
 </ul>
+<p>Wenn beide Benutzer bereits vor der Verknüpfung eigene Kalenderdaten verwenden, können diese vorhandenen Daten im Rahmen der Partnerverknüpfung in einem gemeinsamen Kalender zusammengeführt werden. Bei unterschiedlichen Angaben für dieselbe Person und denselben Kalendertag werden grundsätzlich die von dieser Person selbst erfassten Einträge bevorzugt. Partnerseitig eingetragene Angaben können vorhandene Lücken ergänzen.</p>
 <p>Die E-Mail-Adresse wird im Rahmen der Partnerfunktion ausschließlich zur Zuordnung bzw. Verknüpfung des vorgesehenen ShiftInsight-Kontos verwendet.</p>
 <p>Durch die Partnerverknüpfung erhält der verbundene Partner Zugriff auf die innerhalb des gemeinsamen Partnerkalenders vorgesehenen Schichtinformationen. Persönliche lokale Einstellungen wie beispielsweise eigene Geräte- oder Anzeigeeinstellungen werden dadurch nicht automatisch freigegeben.</p>
 </section>
